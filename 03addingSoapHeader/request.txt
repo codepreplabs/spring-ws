@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:beer="http://codeprep.com/beer">
+   <soapenv:Header>
+   	<cust:authentication xmlns:cust="http://codeprep.com/cust">
+         	<cust:username>username</cust:username>
+         	<cust:password>password</cust:password>
+      </cust:authentication>
+   </soapenv:Header>
+   <soapenv:Body>
+      <beer:getBeerRequest>
+         <beer:id>10</beer:id>
+      </beer:getBeerRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
